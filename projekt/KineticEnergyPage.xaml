@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="projekt.KineticEnergyPage"
+             Title="KineticEnergyPage">
+    <VerticalStackLayout>
+        <StackLayout Padding="30" Spacing="20">
+            <Label Text="Enter Mass (kg)" />
+            <Entry x:Name="Mass" Placeholder="Mass" Keyboard="Numeric" />
+
+            <Label Text="Enter Velocity (m/s)" />
+            <Entry x:Name="Velocity" Placeholder="Velocity" Keyboard="Numeric" />
+
+            <Button Text="Calculate Kinetic Energy" Clicked="OnButtonClicked" />
+
+            <Label x:Name="Result" FontSize="20" />
+
+            <Button Text="Back" Clicked="OnBackClicked" />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
